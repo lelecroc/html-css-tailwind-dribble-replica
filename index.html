@@ -80,7 +80,7 @@
             </marquee>
         </section>
 
-        <!-- Titolino "Explore inspiring designs" -->
+        <!-- Titolino  -->
         <div class="flex items-center justify-center mt-28 mb-16">
             <h2 class="w-[80vw] mt-10 font-light text-3xl text-center md:text-5xl">Explore inspiring designs</h2>
         </div>
@@ -207,27 +207,76 @@
             <button class=" h-12 w-52 px-4 border border-gray-400 rounded-[25px] mt-12 text-sm hover:cursor-pointer"> Browse more inspiration</button>
         </div>
         <!-- Sezione gialla -->
-        <section>
-            <h2>Find your next designer today</h2>
-            <p>The world's leading brands use Dribbble to hire creative talent. Browse millions of top-rated portfolios to find your perfect creative match.</p>
-            <div>
-                <button>Get started now</button>
-                <button>Learn about hiring</button>
+        <section class="bg-[#ffda79] mt-36 flex flex-col justify-center items-center">
+            <h2 class="font-serif mt-20 text-5xl md:w-[40vw] text-center">Find your next designer today</h2>
+            <p class=" mt-8 text-center font-light  md:w-[50%]">The world's leading brands use Dribbble to hire creative talent. Browse millions of top-rated portfolios to find your perfect creative match.</p>
+            <div class="flex flex-row mt-12 justify-center items-center">
+                <button class="px-5 mr-6 h-14 w-44 rounded-[25px] bg-black text-gray-300 hover:cursor-pointer">Get started now</button>
+                <button class="h-14 w-44 rounded-[25px] bg-white text-black hover:cursor-pointer">Learn about hiring</button>
             </div>
-            <p></p>
+            <p class="mt-16 mb-32">Are you a designer? <u class="hover:cursor-pointer">Join Dribbble</u></p>
         </section>
 
         <!-- Sezione scroll immagini 2 -->
-        <section></section>
+        <section class="mt-12">
+            
+            <marquee class="flex" behavior="scroll" direction="left">
+                <img class="w-40 h-36 rounded-[10px] mb-10" src="Assets/img-1.png" alt="">    
+            </marquee>
+            
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="mt-6 flex flex-col">
         <!-- Parte nera -->
-        <div></div>
+        <div class="flex flex-col justify-center items-center lg:flex-row lg:justify-between p-8">
+            <!-- logo -->
+            <img class="w-[90px] hover:cursor-pointer mb-4 lg:mb-0" src="Assets/logo.png" alt="Logo">
+            <ul class="flex hover:cursor-pointer font-semibold text-xs mb-4 lg:mb-0">
+                <li class="pr-4">For Designers</li>
+                <li class="pr-4">Hire talent</li>
+                <li class="pr-4">Inspiration</li>
+                <li class="pr-4">Advertising</li>
+                <li class="pr-4">Blog</li>
+                <li class="pr-4">About</li>
+                <li class="pr-4">Careers</li>
+                <li>Support</li>
+            </ul>
+            <!-- social -->
+            <div class="flex">
+                <i class="mr-3 fa-brands fa-x-twitter"></i>
+                <i class="mr-3 fa-brands fa-square-facebook"></i>
+                <i class="mr-3 fa-brands fa-instagram"></i>
+                <i class="mr-3 fa-brands fa-pinterest"></i>
+
+            </div>
+        </div>
 
         <!-- Parte grigia -->
-        <div></div>
+        <div class="p-10 flex flex-col justify-center items-center md:flex-row md:justify-between">
+            <!-- dx/top -->
+            <div class="">
+                <ul class="flex text-[#a7a6ae] text-xs">
+                    <li class="pr-4">@2024 Dribbble</li>
+                    <li class="pr-4">Terms</li>
+                    <li class="pr-4">Privacy</li>
+                    <li class="pr-4">Cookies</li>
+                </ul>
+            </div>
+            <!-- sx/bottom -->
+            <div>
+                <ul class="flex  text-[#a7a6ae] text-xs">
+                    <li class="pr-4">Jobs</li>
+                    <li class="pr-4">Designers</li>
+                    <li class="pr-4">Freelancers</li>
+                    <li class="pr-4">Tags</li>
+                    <li class="pr-4">Places</li>
+                    <li>Resources</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
