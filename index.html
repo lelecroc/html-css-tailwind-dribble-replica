@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dribbble - Discover the World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://kit.fontawesome.com/54c8c90fcc.js"
+    crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-[#f8f7f4]">
     <!-- Header (Navbar + Jumbo) -->
     <header>
         <!-- Navbar -->
-        <nav></nav>
+        <!-- ordine navbar: Hamburger - Dribble - Find talent - search bar - log in - sign up (Dribbble e findtalent sono in un div unico perché in desktop si 
+            swappano)  -->
+        <nav class=" h-[100px] p-8 flex items-center justify-between">
+            <!-- sx -->
+            <div class="flex items-center h-[100px]">
+                <!-- hamburger -->
+                <div class="pr-5 lg:hidden">
+                    <i class=" text-2xl hover: cursor-pointer font fa-solid fa-bars"></i>  
+                </div>
+                <!-- logo -->
+                <div class="pr-6 xl:hidden">
+                    <img class="w-[100px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
+                </div>
+                <!-- Find talent -->
+                <div class="hidden lg:flex">
+                    <ul class="flex hover:cursor-pointer font-semibold text-sm">
+                        <li class="pr-6">Find Talent</li>
+                        <li class="pr-6">Inspiration</li>
+                        <li class="pr-6">Learn designs <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="pr-6">Jobs</li>
+                        <li class="pr-6">Go Pro</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- center logo -->
+            <div class="hidden xl:flex items-center p-12">                
+                <img class="w-[100px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
+            </div>
+
+            <!-- dx -->
+            <div class="flex items-center">
+                <!-- input search -->
+                <div class="bg-white mr-6 h-12 justify-center items-center rounded-[25px] hidden xl:flex">
+                    <i class="fa-solid fa-magnifying-glass px-5"></i>
+                    <input class= mr-6 h-10 " type="search" placeholder="Search...">
+                </div>
+                <!-- lente -->
+                <div>
+                    <i class="hover:cursor-pointer pr-6 fa-solid fa-magnifying-glass xl:hidden"></i>
+                </div>
+                <!-- Log in -->
+                <div class="hover:cursor-pointer hidden lg:flex font-semibold text-sm pr-6">Log in</div>
+                <!-- sign up button -->
+                <button class="bg-black text-gray-300 font-semibold text-sm rounded-[25px] h-12 w-24 hover:cursor-pointer">Sign up</button>
+            </div>
+        </nav>
 
         <!-- Jumbo -->
         <section></section>
