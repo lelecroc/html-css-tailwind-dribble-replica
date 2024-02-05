@@ -12,9 +12,7 @@
 <body class="bg-[#f8f7f4]">
     <!-- Header (Navbar + Jumbo) -->
     <header>
-        <!-- Navbar -->
-        <!-- ordine navbar: Hamburger - Dribble - Find talent - search bar - log in - sign up (Dribbble e findtalent sono in un div unico perché in desktop si 
-            swappano)  -->
+        <!-- Navbar --> 
         <nav class=" h-[100px] p-8 flex items-center justify-between">
             <!-- sx -->
             <div class="flex items-center h-[100px]">
@@ -24,7 +22,7 @@
                 </div>
                 <!-- logo -->
                 <div class="pr-6 xl:hidden">
-                    <img class="w-[100px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
+                    <img class="w-[90px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
                 </div>
                 <!-- Find talent -->
                 <div class="hidden lg:flex">
@@ -39,7 +37,7 @@
             </div>
             <!-- center logo -->
             <div class="hidden xl:flex items-center p-12">                
-                <img class="w-[100px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
+                <img class="w-[90px] hover:cursor-pointer" src="Assets/logo.png" alt="Logo">
             </div>
 
             <!-- dx -->
@@ -56,12 +54,20 @@
                 <!-- Log in -->
                 <div class="hover:cursor-pointer hidden lg:flex font-semibold text-sm pr-6">Log in</div>
                 <!-- sign up button -->
-                <button class="bg-black text-gray-300 font-semibold text-sm rounded-[25px] h-12 w-24 hover:cursor-pointer">Sign up</button>
+                <button class="bg-black text-gray-200 font-semibold text-sm rounded-[25px] h-12 w-24 hover:cursor-pointer">Sign up</button>
             </div>
         </nav>
 
         <!-- Jumbo -->
-        <section></section>
+        <section class="flex flex-col items-center justify-center mt-16">
+            <!-- bottone multicolor -->
+            <button class="bg-yellow-300 h-9 rounded-[25px] px-3 font-semibold text-sm text-black hover:cursor-pointer"> Over 3 million ready-to-work creatives! </button>
+            <!-- Titolo + paragrafo -->
+            <h1 class="w-[80vw] mt-14 font-normal text-5xl text-center md:text-7xl">The world's destination for design</h1>
+            <p class="mt-9 text-lg text-center w-[80vw]">Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
+            <!-- cta -->
+            <button class="mt-9 bg-black text-gray-200 font-semibold text-sm rounded-[25px] h-14 w-32 text-center hover:cursor-pointer">Get started</button>
+        </section>
     </header>
 
     <!-- Main -->
