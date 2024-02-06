@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble - Discover the World</title>
+    <title>Dribbble - Discover the World's Top Designers & Creative Professionals </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
     src="https://kit.fontawesome.com/54c8c90fcc.js"
@@ -11,9 +11,9 @@
 </head>
 <body class="bg-[#f8f7f4]">
     <!-- Header (Navbar + Jumbo) -->
-    <header class="font-serif">
+    <header>
         <!-- Navbar --> 
-        <nav class=" h-[100px] p-8 flex items-center justify-between">
+        <nav class="h-[100px] p-8 flex items-center justify-between">
             <!-- sx -->
             <div class="flex items-center h-[100px]">
                 <!-- hamburger -->
@@ -59,14 +59,14 @@
         </nav>
 
         <!-- Jumbo -->
-        <section class="flex flex-col items-center justify-center mt-20">
+        <section class="font-serif flex flex-col items-center justify-center mt-20">
             <!-- bottone multicolor -->
-            <button class="bg-yellow-300 h-9 rounded-[25px] px-3 font-semibold text-sm text-black hover:cursor-pointer"> Over 3 million ready-to-work creatives! </button>
+            <button class="bg-[#ffda79] h-9 rounded-[25px] px-3 font-semibold text-sm text-black hover:cursor-pointer"> Over 3 million ready-to-work creatives! </button>
             <!-- Titolo + paragrafo -->
             <h1 class="w-[80vw] mt-10 font-medium text-5xl text-center md:text-7xl">The world's destination for design</h1>
             <p class="mt-9 text-lg text-center w-[80vw]">Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
             <!-- cta -->
-            <button class="mt-9 bg-black text-gray-200 font-semibold text-sm rounded-[25px] h-14 w-32 text-center hover:cursor-pointer">Get started</button>
+            <button class="mt-9 bg-black text-gray-200 font-semibold text-sm rounded-[25px] h-14 w-32 text-center hover:cursor-pointer hover:bg-gray-600 transition-all duration-300">Get started</button>
         </section>
     </header>
 
@@ -76,7 +76,6 @@
         <section class="flex mt-20">
             <marquee class="flex" behavior="scroll" direction="left">
                 <img class="rounded-[25px] mb-10" src="Assets/img-1.png" alt="">
-                <img class="rounded-[25px]" src="Assets/img-10.png" alt="">
             </marquee>
         </section>
 
@@ -88,119 +87,279 @@
         <!-- Griglia immagini  + cta -->
         <div class="flex flex-col justify-center items-center">
             <section class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                <div class= "flex flex-col">
-                    <img class="rounded-lg hover:cursor-pointer" src="Assets/img-1.png" alt="">
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center px-2 pt-1">
                         <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
-                        <p class="text-xs"> <i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
                     </div>
                 </div>
-                
+                <div class="flex flex-col">
+                    <div class= "flex flex-col relative overflow-hidden">
+                        <img class="rounded-lg hover:cursor-pointer hover:shadow-lg" src="Assets/img-1.png" alt="">
+                        <div class="px-5 absolute h-20 w-full bg-gradient-to-t from-black/40 to-transparent transition-all duration-300 flex hover:cursor-pointer justify-between items-center bottom-0 opacity-0 hover:opacity-100">
+                            <p class="text-white font-sans"> Che bel disegno </p>
+                            <div class="flex">
+                                <button class="bg-white text-black py-2 px-3 rounded-full mr-3"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="bg-white text-black py-2 px-3 rounded-full"><i class="fa-regular fa-heart"></i></button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center px-2 pt-1">
+                        <p class="text-sm">Alexander Vidal <span class="ml-2 bg-gray-300 text-white rounded-sm font-light px-1 text-xs">PRO</span></p>
+                        <p class="text-xs"><i class="text-gray-400 fa-solid fa-heart"></i> 89 <i class=" text-gray-400 fa-solid fa-eye"></i> 36.6k </p>                    
+                    </div>
+                </div>
+               
                 
                 
             </section>
@@ -211,8 +370,8 @@
             <h2 class="font-serif mt-20 text-5xl md:w-[40vw] text-center">Find your next designer today</h2>
             <p class=" mt-8 text-center font-light  md:w-[50%]">The world's leading brands use Dribbble to hire creative talent. Browse millions of top-rated portfolios to find your perfect creative match.</p>
             <div class="flex flex-row mt-12 justify-center items-center">
-                <button class="px-5 mr-6 h-14 w-44 rounded-[25px] bg-black text-gray-300 hover:cursor-pointer">Get started now</button>
-                <button class="h-14 w-44 rounded-[25px] bg-white text-black hover:cursor-pointer">Learn about hiring</button>
+                <button class="px-5 mr-6 h-14 w-44 rounded-[25px] bg-black text-gray-300 hover:cursor-pointer hover:bg-gray-600 transition-all duration-300"">Get started now</button>
+                <button class="h-14 w-44 rounded-[25px] bg-white text-black hover:cursor-pointer hover:text-gray-300 transition-all duration-300"">Learn about hiring</button>
             </div>
             <p class="mt-16 mb-32">Are you a designer? <u class="hover:cursor-pointer">Join Dribbble</u></p>
         </section>
